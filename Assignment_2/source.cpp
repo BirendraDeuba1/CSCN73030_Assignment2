@@ -54,10 +54,11 @@ int main() {
 
 	inputFile.close();
 
+#ifdef _DEBUG
 	for (const STUDENT_DATA& student : students)
 	{
 		cout << student.firstName << " " << student.lastName << endl;
 	}
-
+#endif
 	return 1;
 }
